@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Tabela</title>
+	<meta charset="utf-8">
+
+	<style>
+		
+		table,td,th{border: 1px solid #000;}
+		th,td{padding: 7px;}
+		.Nome {background-color: white}
+		.Email {background-color: red}
+		.Telefone {background-color: green}
+		.Endereco {background-color: blue}
+		.Cargo {background-color: yellow}
+	</style>
+
+</head>
+<body>
+	<!--
+		a tag table usado para criar um tabela
+		a tag caption usado para dar o nome da tabela
+		a tag colgroup usado para identificar os itens da tabela
+		a tag col usado para nome os itens da tabela
+		a tag tr usado para colocar em uma coluna
+		a tag th usado para colocar os itens da tabela na linha
+		a tag td usado para colocar os dados da tabela na linha
+		o rowspan usado para quando duas linha tem o msm atribudo
+		o colspan para aumentar o tamanho da coluna 
+	-->
+
+	<table>
+		<caption>Funcionário</caption>
+
+		<colgroup>
+			<col class="Nome">
+			<col class="Email">
+			<col class="Telefone">
+			<col class="Endereco">
+			<col class="Cargo">
+		</colgroup>
+
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Email</th>
+				<th>Telefone</th>
+				<th>Endereço</th>
+				<th>Cargo</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Guilherme</td>
+				<td>gui@email.com</td>
+				<td>(11)99999-9999</td>
+				<td>rua X</td>
+				<td rowspan="2">Desenvolvedor Java</td>
+			</tr>
+			<tr>
+				<td>Cleiton</td>
+				<td>gui@email.com</td>
+				<td>(11)99999-9999</td>
+				<td>rua X</td>
+				
+			</tr>
+			<tr>
+				<td>Igor</td>
+				<td>igoh@email.com</td>
+				<td>(11)99999-9999</td>
+				<td>rua X</td>
+				<td>Desenvolvedor Web</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td colspan="5">Total: 2</td>
+			</tr>
+		</tfoot>
+
+	</table>
+
+</body>
+</html>

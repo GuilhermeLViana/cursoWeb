@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formulários</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<fieldset>
+	<legend>Login</legend>
+	<form action="arquivo.php" method="POST">
+		Nome:<br />
+		<input type="text" name="nome" required autofocus maxlength="10" minlength="4" placeholder="Ex: João da Silve"> <br />
+		Senha: <br />
+		<input type="password" name="senha" required placeholder="Ex: ilovecat"><br />
+		E-mail: <br />
+		<input type="email" name="email" required placeholder="JoãoS@email.com"><br />
+		Time: <br />
+		<input type="radio" name="time" value="vasco" checked>Vasco <br />
+		<input type="radio" name="time" value="flamengo">Flamengo <br />
+		<input type="radio" name="time" value="botafogo">Botafogo <br />
+		Cores: <br />
+		<input type="checkbox" name="cores" value="verde">Verde <br />
+		<input type="checkbox" name="cores" value="amarelo">Amarelo <br />
+		<input type="checkbox" name="cores" value="vermelho">Vermelho <br />
+		Quantidade: <br />
+		<input type="number" name="quantidade" min="0" max="10"><br />
+		<input type="range" name="quantidade" min="0" max="100"><br />
+		Cor: <br>
+		<input type="color" name="Cor">
+
+		<input type="submit" name="btnEnviar" value="Enviar">
+	</form>
+</fieldset>
+	<!--
+		input type="text" - valor do tipo texto
+		input type="password" - valor de senha, campo com caracter * no lugar da letra
+		input type="email" - valor do tipo email, ficaram dando erro se nao colocar um valor real;
+		input type="radio" - grupo de campo que so poderá ser marcado um valor
+		input type="checkbox" - grupo de campo que poderá ser marcado mais de um campo
+		input type="number" - valor numerico inteiro
+		input type="range" - valor do tipo inteiro mas em slide
+		input type="color" - selecionar cor
+		form action - direciona para o arquivo php
+		method GET - envia os dados pela url
+		method POST -  envia os dados ocutado do usuario
+
+		fieldset - coloca em um retangulo
+		legend - legenda do retangulo
+
+		placeholder - texto no campo para simplifica o que tem que ser digitado
+		riquired - faz o campo ser obrigadorio
+		autofocus - deixa o foco na caixa de texto quando abrir a pagina
+		disabled - deixa o campo desabilidado
+		maxlength - valor maximo de caracter no campo
+		minlength - valor minimo de caracter no campo
+	-->
+
+</body>
+</html>

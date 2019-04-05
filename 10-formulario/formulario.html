@@ -27,12 +27,65 @@
 		<input type="number" name="quantidade" min="0" max="10"><br />
 		<input type="range" name="quantidade" min="0" max="100"><br />
 		Cor: <br>
-		<input type="color" name="Cor">
+		<input type="color" name="cor"><br />
+		Imagem:<br />
+		<input type="file" name="imagem"><br />
+		Url:<br />
+		<input type="url" name="site"><br />
+		Search:<br />
+		<input type="search" name="pesquisa"><br />
+		Telefone:<br />
+		<input type="Tel" name="telefone"><br />
+		Data:<br />
+		<input type="date" name="data" min="1980-01-01" max="2019-12-31"><br />
+		Hora:<br />
+		<input type="time" name="hora"><br />
+		Mes e ano:<br />
+		<input type="month" name="mesAno"><br />
+		Semana:<br />
+		<input type="week" name="semana"><br />
+		data e hora:<br />
+		<input type="datetime-local" name="dataHora"><br />
+		Mensagem:<br />
+		<textarea name="mensagem" rows="5" cols="30" ></textarea><br/>
+		<button type="button">click-me</button><br>
+		Escolha seu veiculo<br>
+		<select>
+			<optgroup label="Carros">
+			<option value="camaro">camaro</option>
+			<option value="bmw">BMW</option>
+			</optgroup>
+			<optgroup label="Motos">
+			<option value="pop100">POP 100</option>
+			<option value="cb500">CB-500</option>
+			</optgroup>
+		</select>
+<br><br>
+		Escolha uma linguagem<br>
+		<input name="linguagem" list="listaLinguagem">
+			<datalist id="listaLinguagem">
+				<option value="Java">
+				<option value="C#">
+			</datalist>
 
 		<input type="submit" name="btnEnviar" value="Enviar">
 	</form>
 </fieldset>
 	<!--
+		option - itens do grupo
+		optgroup - grupo para da lista select
+		select - selecionar opções
+		button - botão, pode colocar conteudo nele como texto ou imagem
+		textearea - area para uma mendagem
+		input type="datetime-local" - obter data e hora
+		input type="week" - obter uma semana
+		input type="month" - obter mes e ano
+		input type="time" - obter horas
+		input type="date" - obter uma data
+		input type="url" - obter um url de um site
+		input type="search" - pesquisa
+		input type="file" - obter um telefone
+		input type="file" - obter um arquivo
 		input type="text" - valor do tipo texto
 		input type="password" - valor de senha, campo com caracter * no lugar da letra
 		input type="email" - valor do tipo email, ficaram dando erro se nao colocar um valor real;
@@ -47,7 +100,7 @@
 
 		fieldset - coloca em um retangulo
 		legend - legenda do retangulo
-
+		spellcheck - correção automatica
 		placeholder - texto no campo para simplifica o que tem que ser digitado
 		riquired - faz o campo ser obrigadorio
 		autofocus - deixa o foco na caixa de texto quando abrir a pagina

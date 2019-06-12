@@ -1,0 +1,14 @@
+/*utilizar o . quando estiver se referindo a classes*/
+.personagens{
+	color: red;
+	text-align: center;
+}
+
+.fundo{
+	background-color: black;
+}
+
+#jogo{
+	color: blue;
+	background-color: black;
+}

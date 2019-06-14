@@ -1,0 +1,24 @@
+p{
+	color: red;
+	text-transform: uppercase;
+	text-align: justify;
+	text-indent: 2%;
+	line-height: 120%;
+}
+
+h1{
+	text-align: right;
+	text-decoration: underline;
+	text-transform: lowercase;
+}
+
+h2{
+	text-align: left;
+	text-decoration: overline;
+	text-transform: capitalize;
+}
+
+h3{
+	text-align: center;
+	text-decoration: line-through;
+}

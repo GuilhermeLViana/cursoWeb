@@ -1,2 +1,2 @@
 # cursoWeb
-curso sobre desenvolvimento web com HTML5 e CSS3
+curso sobre desenvolvimento web com HTML5 e CSS3 e JS
